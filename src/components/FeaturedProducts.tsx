@@ -9,8 +9,8 @@ const FeaturedProducts = () => {
       name: "Cosmic Nebula",
       category: "Space",
       rating: 4.8,
-      price: 24.99,
-      originalPrice: 34.99,
+      price: 599,
+      originalPrice: 899,
       isNew: true,
       image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=300&h=300&fit=crop&crop=center"
     },
@@ -19,8 +19,8 @@ const FeaturedProducts = () => {
       name: "Abstract Geometry",
       category: "Abstract",
       rating: 4.6,
-      price: 22.99,
-      originalPrice: 32.99,
+      price: 699,
+      originalPrice: 999,
       isNew: false,
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop&crop=center"
     },
@@ -29,8 +29,8 @@ const FeaturedProducts = () => {
       name: "Digital Forest",
       category: "Nature",
       rating: 4.9,
-      price: 26.99,
-      originalPrice: 36.99,
+      price: 699,
+      originalPrice: 999,
       isNew: true,
       image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=300&fit=crop&crop=center"
     },
@@ -39,8 +39,8 @@ const FeaturedProducts = () => {
       name: "Neon Dreams",
       category: "Cyberpunk",
       rating: 4.7,
-      price: 25.99,
-      originalPrice: 35.99,
+      price: 699,
+      originalPrice: 999,
       isNew: false,
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&crop=center"
     }
@@ -108,10 +108,10 @@ const FeaturedProducts = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
                     <span className="text-2xl font-bold text-primary">
-                      ${product.price}
+                      ₹{product.price}
                     </span>
                     <span className="text-sm text-muted-foreground line-through">
-                      ${product.originalPrice}
+                      ₹{product.originalPrice}
                     </span>
                   </div>
                 </div>

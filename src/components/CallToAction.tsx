@@ -14,14 +14,18 @@ const CallToAction = () => {
     setImageUrl(null);
 
     try {
-      // Call your Outsystems REST API
-      const res = await fetch(
-        `https://personal-he2qwpjy.outsystemscloud.com/Teerificu/rest/GenImages/Generate?Prompt=${input}`
-      );
+      // Call Netlify function instead of Outsystems directly
+      const res = await fetch(`/.netlify/functions/proxy`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt: input }),
+      });
 
       if (!res.ok) throw new Error("Failed to generate image");
 
-      // API gives image as raw output (blob)
+      // Function returns image as binary
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
 

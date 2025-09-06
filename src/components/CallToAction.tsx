@@ -16,9 +16,7 @@ const CallToAction = () => {
     try {
       // Call your Outsystems REST API
       const res = await fetch(
-        `https://personal-he2qwpjy.outsystemscloud.com/Teerificu/rest/GenImages/Generate?Prompt=${encodeURIComponent(
-          input
-        )}`
+        `https://personal-he2qwpjy.outsystemscloud.com/Teerificu/rest/GenImages/Generate?Prompt=${input}`
       );
 
       if (!res.ok) throw new Error("Failed to generate image");

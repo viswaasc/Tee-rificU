@@ -10,11 +10,12 @@ const Header = () => {
     <header className="bg-background border-b border-border px-4 py-3 sticky top-0 z-50 backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-            <img
-              src="/logo.png"
-              alt="Tee-rific U"
-              className="h-10 w-22"
-           />
+           <img 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
+              alt="Tee-rific U" 
+              className="h-10 w-22" 
+            />
+
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex items-center space-x-8">

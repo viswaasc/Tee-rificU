@@ -80,15 +80,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>hello@teerific.com</span>
+                <span>teerificu@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 8137805551</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>123 Design Street, AI City</span>
+                <span>Melarannoor, Thiruvananthapuram</span>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 Tee-rific U. All rights reserved.
+            © 2025 Tee-rific U. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
